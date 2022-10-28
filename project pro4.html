@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ip">
+ <div id="first" align="center">STAFF PORTAL</div>
+ <div>
+    <br>
+    <div id="main">
+        <select name="staff requriments " id="second">
+            <option value=1 selected = "true">HOME
+              
+         </select>
+
+ 
+ <button style="backgrouSnd-color: white"> <a href="/placementportal/drive.html">View Drive </a> </button>
+
+</div>
+</div>
+
+
+<body class="mt32">
+
+    <div class="container">
+        <h3>
+            <span>Filter for searching students</span>
+            <input type="search" placeholder="Search..." class="form-control search-input" data-table="customers-list"/>
+        </h3>
+        <div id="tab">
+            <div id="hey"><table class="table table-striped mt32 customers-list">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>List of Students</th>
+                    <th>Email</th>
+                    <th>CGPA</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            </div>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td ><button onclick="notification()">Ana Trujillo</button><p id="deno"></p></td>
+                    <td>Ana.trujillo@gmail.com</td>
+                    <td>9</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td ><button onclick="notification()">Antonio Moreno</button><p id="deno"></p></td>
+                    <td>antoniomoreno2@gmail.com</td>
+                    <td>6</td>
+                    <td>Medical</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td ><button onclick="notification()">Maria Anders</button><p id="deno"></p></td>
+                    <td>mariaanders@yahoo.com</td>
+                    <td>8</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td ><button onclick="notification()">Thomas Hardy</button><p id="deno"></p></td>
+                    <td>hardythomas.90@gmail.com</td>
+                    <td>8</td>
+                    <td>BBA</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td ><button onclick="notification()">Christina Berglund</button><p id="deno"></p></td>
+                    <td>christina@outlook.com</td>
+                    <td>7</td>
+                    <td>CSE</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td ><button onclick="notification()">Davolio Nancy</button><p id="deno"></p></td>
+                    <td>nancy.davolio@gmail.com</td>
+                    <td>8</td>
+                    <td>ECE</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td ><button onclick="notification()">Fuller Andrew</button><p id="deno"></p></td>
+                    <td>andrew.10@yahoo.com</td>
+                    <td>8</td>
+                    <td>LAW</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td ><button onclick="notification()">Leverling Janet</button><p id="deno"></p></td>
+                    <td>leverling.j@gmail.com</td>
+                    <td>5</td>
+                    <td>LAW</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    function notification(){
+        
+       var txt;
+       if(confirm("press ok if u want to block the  student")){
+        txt="blocked";
+
+       }else{
+        txt ="unblocked"
+       }
+       document.getElementById("deno").innerHTML=txt;
+    }
+</script>
+<script>
+    function dregistration(){
+
+    }
+</script>
+    <script>
+        (function(document) {
+            'use strict';
+
+            var TableFilter = (function(myArray) {
+                var search_input;
+
+                function _onInputSearch(e) {
+                    search_input = e.target;
+                    var tables = document.getElementsByClassName(search_input.getAttribute('data-table'));
+                    myArray.forEach.call(tables, function(table) {
+                        myArray.forEach.call(table.tBodies, function(tbody) {
+                            myArray.forEach.call(tbody.rows, function(row) {
+                                var text_content = row.textContent.toLowerCase();
+                                var search_val = search_input.value.toLowerCase();
+                                row.style.display = text_content.indexOf(search_val) > -1 ? '' : 'none';
+                            });
+                        });
+                    });
+                }
+
+                return {
+                    init: function() {
+                        var inputs = document.getElementsByClassName('search-input');
+                        myArray.forEach.call(inputs, function(input) {
+                            input.oninput = _onInputSearch;
+                        });
+                    }
+                };
+            })(Array.prototype);
+
+            document.addEventListener('readystatechange', function() {
+                if (document.readyState === 'complete') {
+                    TableFilter.init();
+                }
+            });
+
+        })(document);
+    </script>
+    <br><br>
+    <div class="announcement">
+        <h5>Announcement</h5>
+        <h6 align="center">  New  Enrollment into Career Services - 2025 graduating batch students ( Non- first year student) (15/09/2022) Oct 27,2022
+            Kind attention: Students expected to graduate in 2025.
+            
+            This is for the information of all the concerned that the Career Services Registration has been opened for the students graduating in 2025 as per the following details:
+            
+            Applicability:
+            
+            a) The policy is applicable to students (Indian and International) of full-time regular programs (including Hons. dual-degree and integrated) expected to graduate in 2025.
+            
+            b) The policy is not applicable to students enrolled in ODL, Part-time, M.Phil., PhD. and Certificate programs</h6>
+        <h6>Registration Timeline (Revised):
+
+            Career Services Registration with access to applicable campus placement/internship opportunities w.e.f 01-Mar-2023 is open from 01-Jul-2022 to 31-Oct-2022.</h6>
+        <h6> The policy is not applicable to students enrolled in ODL, Part-time, M.Phil., PhD. and Certificate programs</h6>
+      </div>
+    </div>
+</body>
+</html>
+
+<style>
+    #first{
+       background-color: cadetblue;
+       font-size: larger;
+      
+    }
+    #main{
+        background-color: rgb(57, 108, 110);
+        
+    }
+    .second:hover{
+        color: brown;
+        transition: 0.3 ;
+    }
+
+
+
+  
+        h3 span {
+            font-size: 22px;
+        }
+        h3 input.search-input {
+            width: 300px;
+            margin-left: auto;
+            float: right;
+            background-color: rgb(165, 207, 209);
+        }
+        .mt32 {
+            margin-top: 32px;
+        }
+#tab{
+    
+    padding-right: 500px;
+    background-color: rgb(243, 252, 249);
+}
+#hey{
+    border: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: cadetblue;
+    
+}
+.announcement {
+  display: inline-block;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  background: black;
+  color: white;
+  font-family: Arial, sans;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  font-size: 0.8em;
+  position: relative;
+  left: -50px;
+  right:100px;
+}
+
+h5 {
+  font-size: 1.5em;
+  letter-spacing: 0.04em;
+  margin: 0;
+  font-weight: normal;
+  color: #ff5252;
+  border: solid;
+  border-color: aliceblue;
+  border-right: 40px;
+  
+}
+
+.announcement {
+  padding: 10px 15px 0px;
+  border: 1px solid #452626;
+  background-color: #116279;
+  border-radius: 4px;
+}
+h6{
+background-color: rgb(96, 130, 159);
+position: relative;
+left:15px;
+font-size: larger;
+border-radius: 30px;
+}
+#ip{
+background-color: rgb(239, 255, 247);
+}
+</style>
+</html>
